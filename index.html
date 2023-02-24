@@ -6,17 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;800&display=swap"
+      rel="stylesheet" />
   </head>
   <body>
-    <div class="">
+    <div class="main-container">
       <div class="container">
         <header>
-          <div class="">
+          <div class="logo">
             <img src="./assets/images/logo.png" alt="logo" />
             <h1>PiggyVest</h1>
           </div>
-          <div class="">
-            <ul>
+          <div class="nav-items">
+            <ul class="nav-items_">
               <li>Save</li>
               <li>Invest</li>
               <li>Stories</li>
@@ -25,14 +30,19 @@
               <li>E-Book</li>
             </ul>
           </div>
-          <div class="">
+          <div class="nav-btn">
             <button>Sign In</button>
             <button>Create Free Account</button>
           </div>
-        </header>
-        <section>
           <div class="">
-            <h1>The Better Way To Save & Invest.</h1>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+          </div>
+        </header>
+        <section class="first-section">
+          <div class="first-hero-section">
+            <h1 class="first-hero-head">The Better Way To Save & Invest.</h1>
             <p>
               PiggyVest helps over 4 million customers achieve their financial
               goals by helping them save and invest with ease.
@@ -40,27 +50,27 @@
             <button>Create Free Account</button>
           </div>
 
-          <div class="">
-            <div class="">
+          <div class="first-hero-button">
+            <div class="iOS_btn">
               <img src="./assets/images/apple.png" alt="apple" />
               <button>Get On Iphone</button>
             </div>
 
-            <div class="">
+            <div class="andriod_btn">
               <img src="./assets/images/playstore.png" alt="playstore" />
               <button>Get On Andriod</button>
             </div>
           </div>
 
-          <div class="">
-            <div class="">
+          <div class="first-hero-img">
+            <div class="first-hero-img_">
               <img src="./assets/images/header Img.png" alt="header" />
             </div>
           </div>
         </section>
 
-        <section>
-          <div class="">
+        <section class="second-section">
+          <div class="second-section_">
             <img src="./assets/images/green-check.png" alt="green-check" />
             <h2>Your security is our priority</h2>
             <p>
@@ -68,88 +78,108 @@
               secured by 256 bits SSL security encryption to ensure that your
               information is comepletely protected from fraud.
             </p>
+            <a href="#">Learn More ></a>
           </div>
         </section>
 
-        <section>
+        <section class="third-section">
           <h2>4 ways to build your savings</h2>
           <p>Earn 5%-15% when you save with any of these PiggyVest plans.</p>
         </section>
 
-        <section>
-          <div class="">
-            <div class="">
-              <img src="./assets/images/piggybank.png" alt="piggybank" />
+        <section class="fourth-section">
+          <div class="fourth-section_">
+            <div class="fourth-section__">
+              <img
+                src="./assets/images/piggybank.png"
+                alt="piggybank"
+                class="img-background" />
               <h2>Automated Saving</h2>
               <p>
                 Build a dedicated savings faster on your terms automatically or
                 manually.
               </p>
             </div>
-            <div class="">
-              <img src="./assets/images/arrow-Shape.png" alt="arrow-Shape" />
+            <div class="link">
+              <img
+                src="./assets/images/arrow-Shape.png"
+                alt="arrow-Shape"
+                class="img-background" />
               <p>PiggyBank</p>
             </div>
           </div>
 
-          <div class="">
-            <div class="">
-              <img src="./assets/images/locked.png" alt="locked" />
+          <div class="fourth-section_">
+            <div class="fourth-section__">
+              <img
+                src="./assets/images/locked.png"
+                alt="locked"
+                class="img-background color" />
               <h2>Fixed Saving</h2>
               <p>
                 Lock money away for a fixed duration with no access to it until
                 maturity. its like having a custom fixed deposit
               </p>
             </div>
-            <div class="">
+            <div class="link">
               <img
                 src="./assets/images/safe-lock-arrow.png"
-                alt="safe-lock-arrow" />
+                alt="safe-lock-arrow"
+                class="img-background color" />
               <p>Safelock</p>
             </div>
           </div>
 
-          <div class="">
-            <div class="">
-              <img src="./assets/images/goal-oriented.png" alt="piggybank" />
+          <div class="fourth-section_">
+            <div class="fourth-section__">
+              <img
+                src="./assets/images/goal-oriented.png"
+                alt="piggybank"
+                class="color-3" />
               <h2>Goal-Oriented Savings</h2>
               <p>
                 Reach all your savings goal faster Save towards multiple goals
                 on your own or in a group.
               </p>
             </div>
-            <div class="">
+            <div class="link">
               <img
                 src="./assets/images/goal-arrow.png"
-                alt="flex-naira-arrow" />
+                alt="flex-naira-arrow"
+                class="color-3" />
               <p>Target Savings</p>
             </div>
           </div>
 
-          <div class="">
-            <div class="">
-              <img src="./assets/images/flex-naira.png" alt="flex-naira" />
+          <div class="fourth-section_">
+            <div class="fourth-section__">
+              <img
+                src="./assets/images/flex-naira.png"
+                alt="flex-naira"
+                class="color-4" />
               <h2>Flexible Saving</h2>
               <p>
                 Save, Transfer, Withdraw, Manage and organize your money for
                 free at any time
               </p>
             </div>
-            <div class="">
+            <div class="link">
               <img
                 src="./assets/images/flex-naira-arrow.png"
-                alt="flex-naira-arrow" />
+                alt="flex-naira-arrow"
+                class="color-4" />
               <p>Flex Naira</p>
             </div>
           </div>
         </section>
 
-        <section class="">
-          <div class="">
+        <section class="fifth-section">
+          <div class="picture">
+            <div class="effect"></div>
             <img src="./assets/images/Phone Image.png" alt="Phone" />
           </div>
           <div class="">
-            <button>Up to 25% Returns</button>
+            <button class="fifth-section-btn">Up to 25% Returns</button>
             <h1>Access Investment opportunities</h1>
             <p>
               Invest securely and confidently on the go.Grow your money
@@ -159,8 +189,8 @@
           </div>
         </section>
 
-        <section>
-          <div class="">
+        <section  class="sixth-section">
+          <div class="sixth-section_">
             <h1>Meet the saver of the month</h1>
             <p>
               Every month, we shine a spotlight on one saver, asking them
@@ -168,16 +198,16 @@
               specifically helping them shape how they spend and save for future
               responsibilities.
             </p>
-            <div class="">
-              <img src="./assets/images/blue-arrow.png" alt="blue-arrow" />
+            <div class="sixth-section__">
+              <img src="./assets/images/blue-arrow.png" alt="blue-arrow" class="arrow"/>
               <p>Meet the Oyetade’s</p>
             </div>
           </div>
           <img src="./assets/images/Saver-Pic.png" alt="Saver-Pic" />
         </section>
-        <section class="">
-          <div class="">
-            <div class="">
+        <section class="seventh-section">
+          <div class="seventh-section-first">
+            <div class="seventh-section-first_">
               <h1>4 Million + customers</h1>
               <p>
                 Since launching in 2016, over 4,000,000 people have used
@@ -186,94 +216,110 @@
               </p>
             </div>
 
-            <button>Create Free Account</button>
+            <button class="button-create">Create Free Account</button>
 
-            <div class="">
-              <div class="">
+            <div class="seventh-section-btns">
+              <div class="iOS_btn">
                 <img src="./assets/images/apple.png" alt="apple" />
                 <button>Get On Iphone</button>
               </div>
 
-              <div class="">
+              <div class="andriod_btn">
                 <img src="./assets/images/playstore.png" alt="playstore" />
                 <button>Get On Andriod</button>
               </div>
             </div>
           </div>
 
-        <div class="">
-          <div class="">
-            <div class="">
-                <p>Wednesday, 5th of October 2022 by 03:08 AM
-                    Micheal F</p>
-                    <h3>Micheal F</h3>
-                    <p>Whenever money got into my hands, I never knew how I squandered it so fast without even saving a little. I got to hear about Piggy vest and it's various services and right now, I am totally enjoying this journey.</p>
+          <div class="seventh-section-second">
+            <div class="seventh-section-second_">
+              <div class="seventh-section-second__">
+                <p class="date">Wednesday, 5th of October 2022 by 03:08 AM</p>
+                <h3>Micheal F</h3>
+                <p>
+                  Whenever money got into my hands, I never knew how I
+                  squandered it so fast without even saving a little. I got to
+                  hear about Piggy vest and it's various services and right now,
+                  I am totally enjoying this journey.
+                </p>
+              </div>
+              <img src="./assets/images/Micheal.png" alt="Micheal" />
             </div>
-            <img src="./assets/images/Micheal.png" alt="Micheal">
-          </div>
 
-          <div class="">
-            <div class="">
-                <p>Thursday, 27th of October 2022 by 13:03 PM</p>
-                    <h3>Racheal O.</h3>
-                    <p>My name is Rachael Joseph and I am here to testify that Piggyvest has helped me a lot. I had to spread the good news to my friends and tell them about the app and behold they are also using it. Thank you so much Pggyvest for saving me cause I am the type of person that spends lavishly. Thank you once again Piggyvest </p>
+            <div class="seventh-section-second_ seventh-section-second_fix">
+              <div class="seventh-section-second__">
+                <p class="date">Thursday, 27th of October 2022 by 13:03 PM</p>
+                <h3>Racheal O.</h3>
+                <p>
+                  My name is Rachael Joseph and I am here to testify that
+                  Piggyvest has helped me a lot. I had to spread the good news
+                  to my friends and tell them about the app and behold they are
+                  also using it. Thank you so much Pggyvest for saving me cause
+                  I am the type of person that spends lavishly. Thank you once
+                  again Piggyvest
+                </p>
+              </div>
+              <img src="./assets/images/Racheal.png" alt="Racheal" />
             </div>
-            <img src="./assets/images/Racheal.png" alt="Racheal">
           </div>
-        </div>
         </section>
-        <section>
+        <secth1ion class="eighth-section">
           <h1>As featured in</h1>
-          <div class="">
-            <img src="./assets/images/image 1.png" alt="Image">
-            <img src="./assets/images/image  2.png" alt="Image">
-            <img src="./assets/images/image 3.png" alt="Image">
-          
+          <div class="eighth-section-img">
+            <img src="./assets/images/image 1.png" alt="Image" />
+            <img src="./assets/images/image  2.png" alt="Image" />
+            <img src="./assets/images/image 3.png" alt="Image" />
+          </div>
+        </secth1ion>
+        <section class="nineth-section">
+          <div class="nineth-section-first">
+            <div class="logo">
+              <img src="./assets/images/logo.png" alt="logo" />
+              <h1>PiggyVest</h1>
+            </div>
+            <img src="./assets/images/compliance.png" alt="compliance" />
+          </div>
+          <div class="nineth-section-second">
+            <div class="nineth-section-second_">
+              <h3>Product</h3>
+              <p>PiggyBank</p>
+              <p>Invest</p>
+              <p>Safelock</p>
+              <p>Target Savings</p>
+              <p>Flex Naira</p>
+            </div>
+            <div class="">
+              <h3>Company</h3>
+
+              <p>About</p>
+              <p>FAQs</p>
+              <p>Blogs</p>
+            </div>
           </div>
         </section>
-        <section class="">
-        <div class="">
-          <div class="">
-            <img src="./assets/images/logo.png" alt="logo" />
-            <h1>PiggyVest</h1>
-          </div>
-          <img src="./assets/images/compliance.png" alt="compliance">
-        </div>
-        <div class="">
-          <div class="">
-            <h3>Product</h3>
-            <p>PiggyBank</p>
-            <p>Invest</p>
-            <p>Safelock</p>
-            <p>Target Savings</p>
-            <p>Flex Naira</p>
+        <section class="tenth-section">
+          <div class="tenth-section-img">
+            <img src="./assets/images/facebook.png" alt="facebook" />
+            <img src="./assets/images/twitter.png" alt="twitter" />
+            <img src="./assets/images/ig.png" alt="ig" />
           </div>
           <div class="">
-            <h3>Company</h3>
-            
-            <p>About </p>
-            <p>FAQs</p>
-            <p>Blogs</p>
-          </div>
-        </div>
-        </section>
-        <section>
-          <div class="">
-            <img src="./assets/images/facebook.png" alt="facebook">
-            <img src="./assets/images/twitter.png" alt="twitter">
-            <img src="./assets/images/ig.png" alt="ig">
-          </div>
-          <div class="">
-            <p>Tesmot house, Abdulrahman Okene
-              close, Victoria island, Lagos, Nigeria.</p>
-              <p>contact@piggyvest.com</p>
-              <p>+234 700 933 933 933</p>
+            <p>
+              Tesmot house, Abdulrahman Okene close, Victoria island, Lagos,
+              Nigeria.
+            </p>
+            <p>contact@piggyvest.com</p>
+            <p>+234 700 933 933 933</p>
           </div>
         </section>
-        <footer>
-          <p>Piggyvest (formerly piggybank.ng) is the leading online savings & investing platform in Nigeria. For over 6 years,
-            our customers have saved and invested billions of Naira that they would normally be tempted to spend.</p>
-            <p>2016 - 2022 PiggyTech Global Limited - RC 1405222</p>
+        <footer class="footer">
+          <p>
+            Piggyvest (formerly piggybank.ng) is the leading online savings &
+            investing platform in Nigeria. For over 6 years, our customers have
+            saved and invested billions of Naira that they would normally be
+            tempted to spend.
+          </p>
+          <p>2016 - 2022 PiggyTech Global Limited - RC 1405222</p>
         </footer>
       </div>
     </div>
