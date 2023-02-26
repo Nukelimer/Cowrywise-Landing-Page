@@ -3,11 +3,12 @@ const hamburgerBtn = document.querySelector('.ham-btn');
 const navItems = document.querySelector('.nav-items');
 
 
-cancelBtn.addEventListener('click', () => {
-    navItems.classList.toggle('hide')
-})
-
 hamburgerBtn.addEventListener('click', () => {
-    navItems.classList.remove('hide')
-    navItems.classList.add('show')
-})
+    navItems.style.display = 'flex';
+    navItems.classList.add('show_')
+});
+
+cancelBtn.addEventListener('click', () => {
+    navItems.style.display = 'none';
+    navItems.classList.remove('show_')
+});
