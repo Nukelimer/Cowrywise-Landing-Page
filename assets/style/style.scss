@@ -705,9 +705,10 @@ h6 {
         transform: translateX(0px);
       }
     }
+
     @keyframes slide-left {
       0% {
-        transform: translateX(100px);
+        transform: translateX(-100px);
       }
       100% {
         transform: translateX(0px);
