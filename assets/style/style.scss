@@ -70,19 +70,52 @@ h6 {
         display: flex;
       }
       .nav-items {
-        display: none;
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        background: #7913e5;
+        height: 100%;
+        width: 100%;
+        right: 0px;
+        top: 0px;
+        z-index: 2;
+        justify-content: center;
+        color: #e0efff;
+        background: #7913e5;
 
         @media (min-width: 768px) {
           display: flex;
         }
+
+        .cancel {
+          position: absolute;
+          display: flex;
+          top: 12px;
+          right: 12px;
+          background: #d0d5d6;
+          padding: 1em;
+          border-radius: 24%;
+        }
         .nav-items_ {
           display: flex;
+          flex-direction: column;
+          // padding: 0;
+          :hover {
+            text-decoration: underline;
+          }
+          :active {
+            text-decoration: underline;
+          }
+
+          li {
+            margin: 1em 0;
+          }
           @media (min-width: 768px) {
             padding-left: 0;
           }
           li {
             list-style: none;
-            margin-left: 1em;
+            // margin-left: 1em;
           }
         }
       }
@@ -137,6 +170,9 @@ h6 {
           text-align: center;
           font-size: 2.4em;
           margin-bottom: 0.6em;
+          @media (max-width: 768px) {
+            font-size: 1.6em;
+          }
         }
         p {
           text-align: center;
@@ -161,6 +197,9 @@ h6 {
         margin-top: 1em;
         justify-content: space-evenly;
         font-size: 0.95em;
+        @media (max-width: 768px) {
+          font-size: 0.8em;
+        }
         @media (min-width: 768px) {
           display: none;
         }
@@ -260,6 +299,9 @@ h6 {
         font-size: 2em;
         text-align: center;
         margin: 2.4em 0 1.4em 0;
+        @media (max-width: 768px) {
+          font-size: 1.4em;
+        }
       }
     }
     .fourth-section {
@@ -383,7 +425,6 @@ h6 {
           @media (min-width: 768px) {
             border-top-left-radius: 500px;
             border-bottom-left-radius: 500px;
-        
           }
         }
         img {
@@ -428,7 +469,7 @@ h6 {
     .sixth-section {
       @media (min-width: 768px) {
         display: flex;
-        .saver-pic{
+        .saver-pic {
           width: 48%;
         }
       }
@@ -437,7 +478,7 @@ h6 {
         color: white;
         padding: 2.4em;
         @media (min-width: 768px) {
-        width: 70%;
+          width: 70%;
         }
         h1 {
           text-align: center;
@@ -470,7 +511,7 @@ h6 {
       width: 100%;
       @media (min-width: 768px) {
         flex-direction: row-reverse;
-        .seventh-section-first_{
+        .seventh-section-first_ {
           padding-left: 2.4em;
         }
       }
@@ -569,13 +610,12 @@ h6 {
         justify-content: center;
       }
     }
-    .fix{
+    .fix {
       @media (min-width: 768px) {
         display: flex;
         justify-content: space-between;
         margin: 2em 0;
       }
-    
     }
     .nineth-section {
       @media (min-width: 768px) {
@@ -587,7 +627,7 @@ h6 {
       margin-top: 1.6em;
       .nineth-section-first {
         @media (min-width: 768px) {
-        margin-top: 0;
+          margin-top: 0;
         }
         margin-top: 1.6em;
         img {
@@ -597,26 +637,24 @@ h6 {
         .logo_ {
           display: flex;
           column-gap: 0.6em;
-          align-items: flex-start;
+          align-items: center;
           @media (min-width: 768px) {
-             h1{
-               margin-bottom: 2em;
-             }
-             img{
+            h1 {
+              margin-bottom: 2em;
+            }
+            img {
               margin: 0;
-             }
-        
+            }
           }
         }
       }
       .nineth-section-second {
         @media (min-width: 768px) {
-        display: flex;
-        justify-content: space-between;
-      .nineth-section-second_{
-        margin-right: 4em;
-      }
-
+          display: flex;
+          justify-content: space-between;
+          .nineth-section-second_ {
+            margin-right: 4em;
+          }
         }
         display: flex;
         margin-bottom: 1em;
@@ -650,7 +688,30 @@ h6 {
         padding-bottom: 1.8em;
       }
     }
+    .hide {
+      display: none !important;
+      animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+
+    .show {
+      animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+
+    @keyframes slide-right {
+      0% {
+        transform: translateX(100px);
+      }
+      100% {
+        transform: translateX(0px);
+      }
+    }
+    @keyframes slide-left {
+      0% {
+        transform: translateX(100px);
+      }
+      100% {
+        transform: translateX(0px);
+      }
+    }
   }
 }
-
-
